@@ -99,7 +99,7 @@ const Header = props => {
                     >
                       {close => (
                         <LogoutPopupContainer isDark={darkMode}>
-                          <ConfirmMessage>
+                          <ConfirmMessage  isDark={darkMode}>
                             Are you sure you want to logout
                           </ConfirmMessage>
                           <div>
@@ -260,7 +260,7 @@ const Header = props => {
                     <Popup modal trigger={<FiLogOut onClick={onClickLogout} />}>
                       {close => (
                         <LogoutPopupContainer isDark={darkMode}>
-                          <ConfirmMessage>
+                          <ConfirmMessage  isDark={darkMode}>
                             Are you sure you want to logout
                           </ConfirmMessage>
                           <CancelButton type="button" onClick={() => close()}>
